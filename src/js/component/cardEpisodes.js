@@ -24,7 +24,7 @@ export const CardEpisodes = ({episode}) => {
               <div className="d-flex justify-content-between mt-2">
                 <button type="button" className= {store.favorites.includes(episode.name) ? "btn btn-warning text-white" : "btn btn-outline-warning text-warning"} onClick={() => actions.setFavorites(episode.name)}>♥</button>
 
-              <Link to = {"card-details-locations/" + episode.id}>
+              <Link to = {"card-details-episodes/" + episode.id}>
               <button type="button" class="btn btn-primary">Details</button>
               </Link>              
              </div>
