@@ -11,8 +11,8 @@ const {store, actions} = useContext(Context);
 return(
   
 <div className="col">
-		<div className="card border-2 border-success ">
-            <img src={character.image} class=" imag card-img-top" alt="..."/>
+		<div className=" card border-2 border-success" style={{width: "18rem"}} >
+            <img src={character.image} class=" card-img-top" alt="..."/>
             <div class="card-body">
               <h5 className="card-title text-truncate">{character.name}</h5>
               <ul class="list-group list-group-flush">

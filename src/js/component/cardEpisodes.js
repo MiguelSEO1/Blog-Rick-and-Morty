@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import episodeMortyImage from "../../img/episodesrickandMorty.jpg"
+import episodeMortyImage from "../../img/episodesRickandMorty.png"
 import "../../styles/Cards.css";
 import { Link } from "react-router-dom";
 import {Context} from "../store/appContext";
@@ -12,8 +12,8 @@ export const CardEpisodes = ({episode}) => {
   return(
 
 <div className="col">
-		<div className="card border-2 border-success ">
-            <img src={episodeMortyImage} class=" imag card-img-top" alt="..."/>
+		<div className="card border-2 border-success" style={{width: "18rem"}} >
+            <img src={episodeMortyImage} class=" card-img-top" alt="..."/>
             <div class="card-body">
               <h5 className="card-title text-truncate pb-2">{episode.name}</h5>
               <ul class="list-group list-group-flush">

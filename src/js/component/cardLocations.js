@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import locationMortyImage from "../../img/locationrickandMorty.jpg"
+import locationMortyImage from "../../img/locationsRickandMorty.png"
 import { Link } from "react-router-dom";
 import {Context} from "../store/appContext";
 
@@ -12,8 +12,8 @@ const {store, actions} = useContext(Context);
 return(
   
 <div className="col">
-	<div className="card border-2 border-success   ">
-            <img src={locationMortyImage} class=" imag card-img-top" alt="..."/>
+	<div className="card border-2 border-success " style={{width: "18rem"}} >
+            <img src={locationMortyImage} class=" card-img-top" alt="..."/>
             <div class="card-body">
             
               <h5 className="card-title text-truncate">{location.name}</h5>
